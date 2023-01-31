@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUrl: 'https://pixabay.com/api/?key=17877279-9919024b9909b09353f277b8f'
 };
 
 /*

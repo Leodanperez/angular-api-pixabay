@@ -1,3 +1,123 @@
-<div class="row">
+<!--div class="container">
+  <div class="row pt-4">
+    <div class="col-sm-12">
+      <div class="card shadow-lg bg-dark">
+        <div class="card-body">
+          <form class="row pt-5" [formGroup]="form">
+            <div class="col-lg-11">
+              <label for="inputPassword2" class="visually-hidden"></label>
+              <input type="text" formControlName="q" class="form-control shadow-none" id="inputPassword2" placeholder="Search..">
+            </div>
+            <div class="col-lg-1">
+              <button type="button" class="btn btn-primary mb-3 shadow-none" (click)="search()" [disabled]="!form.valid">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div-->
 
-</div>
+  <!--div class="row text-center">
+    <div class="col-2 pt-2" *ngFor="let i of categories">
+      <button class='btn btn-{{i.color}}' (click)="selectCategory(i.name)">{{i.name}}</button>
+    </div>
+  </div-->
+
+  <!--div class="row text-center">
+    <h3>Image Type</h3>
+    <div class="col-3 pt-2">
+      <button class='btn btn-warning' (click)="selectImageType('all')">All</button>
+    </div>
+    <div class="col-3 pt-2">
+      <button class='btn btn-info' (click)="selectImageType('photo')">Photo</button>
+    </div>
+    <div class="col-3 pt-2">
+      <button class='btn btn-dark' (click)="selectImageType('illustration')">Illustration</button>
+    </div>
+    <div class="col-3 pt-2">
+      <button class='btn btn-secondary' (click)="selectImageType('vector')">Vector</button>
+    </div>
+  </div-->
+
+
+<!--div class="container">
+  <div class="row pt-4">
+    <div class="col">
+      <ngb-carousel *ngIf="images" >
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper" >
+            <img src="https://cdn.pixabay.com/photo/2017/03/11/13/19/oilseed-rape-2135026_960_720.jpg" class="bg-images"/>
+          </div>
+          <div class="carousel-caption">
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </ng-template>
+      </ngb-carousel>
+    </div>
+  </div>
+</div-->
+
+<section class="pb-0 pt-3 mt-1">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="bg-dark p-3 p-sm-4 rounded-3 position-relative overflow-hidden">
+          <div class="row">
+            <div class="col-md-12 col-lg-12 mx-auto text-center py-5 position-relative">
+
+              <h2 class="display-6 text-white">Stunning free images & royalty free stock</h2>
+
+              <form class="row g-2 align-items-center justify-content-center mt-3" [formGroup]="form">
+                <div class="col-12 h-search-form">
+                  <input type="text" formControlName="q" class="form-control shadow-none" placeholder="Search for all images on Pixabay">
+                  <button (click)="search()">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pt-3">
+      <div class="col-sm-12 col-lg-12">
+        <ul class="list-inline text-center">
+          <li class="list-inline-item pt-2 mb-2" *ngFor="let cate of categories">
+            <a href="javascript:void(0)" class="btn btn-sm btn-{{cate.color}}-soft" (click)="changeCategory(cate.value)">
+              {{cate.name}}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="gallery pt-3">
+      <ngx-skeleton-loader
+        *ngIf="loading"
+        [count]="data.hits.length"
+        appearance="circle"
+        [theme]="{
+        'width.px': 400,
+        'height.px': 250,
+        'border-radius': '10px'
+      }">
+      </ngx-skeleton-loader>
+      <div *ngFor="let i of data.hits">
+        <img class="img-gallery" [src]="i.largeImageURL" alt="" (click)="showImage(i)">
+      </div>
+    </div>
+
+    <div class="row pt-3 mb-4">
+
+      <div class="col-md-12 ">
+        <div class="d-flex justify-content-between align-items-center">
+          <button class="btn btn-primary" (click)="previousPage()" [disabled]="page === 1">Previous</button>
+          <button class="btn btn-primary" (click)="nextPage()">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

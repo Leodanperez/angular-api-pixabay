@@ -1,0 +1,186 @@
+.img-gallery {
+  max-width: 100%;
+  margin-bottom: 0.5em;
+  display: block;
+  /*outline: 2px solid #fff;
+  outline-offset: -10px;*/
+  border-radius: 0.5rem;
+}
+
+.gallery {
+  columns: 5 320px;
+  column-gap: 0.5em;
+}
+
+/*.bg-images {
+  width: 100%;
+  object-fit: contain;
+}*/
+
+.carousel-item {
+  display: block;
+}
+.carousel-caption {
+  display: block;
+}
+.picsum-img-wrapper img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 24 24'%3e%3cpath d='M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.568 18.005l-1.414-1.415 4.574-4.59-4.574-4.579 1.414-1.416 5.988 5.995-5.988 6.005z'/%3e%3c/svg%3e");
+}
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 24 24'%3e%3cpath d='M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12-12 5.373-12 12zm7.58 0l5.988-5.995 1.414 1.416-4.574 4.579 4.574 4.59-1.414 1.416-5.988-6.006z'/%3e%3c/svg%3e");
+}
+
+.h-search-form {
+  width: 100%;
+  position: relative;
+}
+
+.h-search-form input {
+  width: 100%;
+  padding: 0 30px;
+  border-radius: 50px;
+  border: none;
+  height: 60px;
+  position: relative;
+  color: #dfdfe1;
+}
+
+.h-search-form button {
+  position: absolute;
+  right: 6px;
+  height: 50px;
+  border: none;
+  color: #fff;
+  background: #5f3afc;
+  top: 5px;
+  border-radius: 50px;
+  width: 100px;
+}
+
+.btn-primary-soft {
+  color: #2163e8;
+  background-color: rgba(33, 99, 232, 0.1);
+}
+.btn-primary-soft:active, .btn-primary-soft:hover {
+  color: #fff;
+  background-color: #2163e8;
+  border-color: #2163e8;
+}
+.btn-primary-soft:focus {
+  color: #2163e8;
+  background-color: rgba(33, 99, 232, 0.1);
+  border-color: transparent;
+}
+
+.btn-secondary-soft {
+  color: #595d69;
+  background-color: rgba(89, 93, 105, 0.1);
+}
+.btn-secondary-soft:active, .btn-secondary-soft:hover {
+  color: #fff;
+  background-color: #595d69;
+  border-color: #595d69;
+}
+.btn-secondary-soft:focus {
+  color: #595d69;
+  background-color: rgba(89, 93, 105, 0.1);
+  border-color: transparent;
+}
+
+.btn-success-soft {
+  color: #0cbc87;
+  background-color: rgba(12, 188, 135, 0.1);
+}
+.btn-success-soft:active, .btn-success-soft:hover {
+  color: #fff;
+  background-color: #0cbc87;
+  border-color: #0cbc87;
+}
+.btn-success-soft:focus {
+  color: #0cbc87;
+  background-color: rgba(12, 188, 135, 0.1);
+  border-color: transparent;
+}
+
+.btn-info-soft {
+  color: #4f9ef8;
+  background-color: rgba(79, 158, 248, 0.1);
+}
+.btn-info-soft:active, .btn-info-soft:hover {
+  color: #fff;
+  background-color: #4f9ef8;
+  border-color: #4f9ef8;
+}
+.btn-info-soft:focus {
+  color: #4f9ef8;
+  background-color: rgba(79, 158, 248, 0.1);
+  border-color: transparent;
+}
+
+.btn-warning-soft {
+  color: #f7c32e;
+  background-color: rgba(247, 195, 46, 0.1);
+}
+.btn-warning-soft:active, .btn-warning-soft:hover {
+  color: #000;
+  background-color: #f7c32e;
+  border-color: #f7c32e;
+}
+.btn-warning-soft:focus {
+  color: #f7c32e;
+  background-color: rgba(247, 195, 46, 0.1);
+  border-color: transparent;
+}
+
+.btn-danger-soft {
+  color: #d6293e;
+  background-color: rgba(214, 41, 62, 0.1);
+}
+.btn-danger-soft:active, .btn-danger-soft:hover {
+  color: #fff;
+  background-color: #d6293e;
+  border-color: #d6293e;
+}
+.btn-danger-soft:focus {
+  color: #d6293e;
+  background-color: rgba(214, 41, 62, 0.1);
+  border-color: transparent;
+}
+
+.btn-light-soft {
+  color: #f7f8f9;
+  background-color: rgba(247, 248, 249, 0.1);
+}
+.btn-light-soft:active, .btn-light-soft:hover {
+  color: #000;
+  background-color: #f7f8f9;
+  border-color: #f7f8f9;
+}
+.btn-light-soft:focus {
+  color: #f7f8f9;
+  background-color: rgba(247, 248, 249, 0.1);
+  border-color: transparent;
+}
+
+.btn-dark-soft {
+  color: #191a1f;
+  background-color: rgba(25, 26, 31, 0.1);
+}
+.btn-dark-soft:active, .btn-dark-soft:hover {
+  color: #fff;
+  background-color: #191a1f;
+  border-color: #191a1f;
+}
+.btn-dark-soft:focus {
+  color: #191a1f;
+  background-color: rgba(25, 26, 31, 0.1);
+  border-color: transparent;
+}
+
