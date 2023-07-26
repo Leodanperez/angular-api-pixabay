@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {CarouselComponent} from "./carousel/carousel.component";
 import { FeatherIconsComponent } from './feather-icons/feather-icons.component';
 
 

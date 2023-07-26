@@ -71,7 +71,7 @@
               <form class="row g-2 align-items-center justify-content-center mt-3" [formGroup]="form">
                 <div class="col-12 h-search-form">
                   <input type="text" formControlName="q" class="form-control shadow-none" placeholder="Search for all images on Pixabay">
-                  <button (click)="search()">
+                  <button (click)="search()" [disabled]="!form.valid">
                     <i class="fa fa-search"></i>
                   </button>
                 </div>
@@ -118,6 +118,7 @@
           <button class="btn btn-primary" (click)="nextPage()">Next</button>
         </div>
       </div>
+
     </div>
   </div>
 </section>

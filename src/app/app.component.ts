@@ -1,9 +1,8 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {ApiService} from "./services/api.service";
-import {CAROUSEL_DATA_ITEMS, Hit, Photo} from "./photo.interface";
+import {Hit, Photo} from "./photo.interface";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import { ModalService } from './services/modal.service';
-import {ICarouselItem} from "./shared/carousel/Icarousel-interface";
 import {animate, state, style, transition, trigger} from "@angular/animations";
 
 @Component({
